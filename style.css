@@ -1,10 +1,6 @@
 body {
 	margin: 0;
 	padding: 0;
-	background-color: purple;
-}
-
-.main {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -12,8 +8,53 @@ body {
 	height: 100vh;
 }
 
-.description {
-	font-size: 30px;
-	color: wheat;
-	font-family: Arial;
+.main {
+	width: 150px;
+    height: 150px;
+
+    -webkit-animation-name: heartbeat;
+    -o-animation-name: heartbeat;
+    animation-name: heartbeat;
+    -webkit-animation-duration: infinite;
+    -o-animation-duration: infinite;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.heart {
+	width: 100%;
+    height: 100%;
+    background-color: red;
+    position: relative;
+    transform: rotate(45deg);
+}
+
+.heart:before {
+	content: '';
+    position: absolute;
+    bottom: 80px;
+    border-top-left-radius: 73px;
+    border-top-right-radius: 72px;
+    background-color: red;
+    width: 100%;
+    height: 100%;
+}
+
+.heart:after {
+	content: '';
+    position: absolute;
+    border-radius: 73px 0 0 72px;
+    right: 80px;
+    background-color: red;
+    width: 100%;
+    height: 100%;
+}
+
+@KeyFrames heartbeat {
+	50% {
+		transform: scale(2);
+	}
+	100% {
+		transform: scale(1);
+	}
 }
