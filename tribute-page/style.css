@@ -1,0 +1,48 @@
+body {
+	margin: 0;
+	overflow-x: hidden;
+	font-family: Arial;
+	box-sizing: border-box;
+    padding: 0 10%;
+}
+
+#main {
+	background-color: lightgray;
+}
+
+#main #title {
+	font-size: 30px;
+	color: darkslategray;
+    text-align: center;
+    padding: 30px;
+}
+
+#main #img-div {
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#img-div img {
+	max-width: 95%;
+    height: auto;
+}
+
+#img-div #img-caption {
+	margin: 10px 0;
+}
+
+#main #tribute-info {
+	padding: 1% 2.5%;
+}
+
+#main #link {
+	text-align: center;
+    padding: 2% 0;
+}
+
+#link a {
+	color: darkslategray;
+}
+
+

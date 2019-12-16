@@ -1,60 +1,35 @@
 body {
 	margin: 0;
 	padding: 0;
-	display: flex;
-	align-items: center;
-	justify-content: center;
 	width: 100%;
 	height: 100vh;
+	background: linear-gradient(45deg, blue, red, purple);
+	font-family: Arial;
 }
 
-.main {
-	width: 150px;
-    height: 150px;
-
-    -webkit-animation-name: heartbeat;
-    -o-animation-name: heartbeat;
-    animation-name: heartbeat;
-    -webkit-animation-duration: infinite;
-    -o-animation-duration: infinite;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: darksalmon;
 }
 
-.heart {
-	width: 100%;
-    height: 100%;
-    background-color: red;
-    position: relative;
-    transform: rotate(45deg);
+h2 a {
+	color: darksalmon;
 }
 
-.heart:before {
-	content: '';
-    position: absolute;
-    bottom: 80px;
-    border-top-left-radius: 73px;
-    border-top-right-radius: 72px;
-    background-color: red;
-    width: 100%;
-    height: 100%;
+.projects-list {
+	display: flex;
+	justify-content: center;
+    align-items: center;
+    height: 75vh;
 }
 
-.heart:after {
-	content: '';
-    position: absolute;
-    border-radius: 73px 0 0 72px;
-    right: 80px;
-    background-color: red;
-    width: 100%;
-    height: 100%;
+.projects-list ul {
+	list-style-type: none;
 }
 
-@KeyFrames heartbeat {
-	50% {
-		transform: scale(2);
-	}
-	100% {
-		transform: scale(1);
-	}
+ul a {
+	color: antiquewhite;
 }
+
