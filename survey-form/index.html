@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Survey Form</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	
+	<div id="main">
+		
+		<h1 id="title">Survey Form</h1>
+		<p id="description">This is my first survey form</p>
+
+		<form id="survey-form">
+			
+			<div class="form-group">
+				<label for="name" id="name-label">Name</label>
+				<input type="text" id="name" required placeholder="Enter your name">
+			</div>
+
+			<div class="form-group">
+				<label for="email" id="email-label">Email</label>
+				<input type="email" id="email" required placeholder="Enter your email">
+			</div>
+
+			<div class="form-group">
+				<label for="number" id="number-label">Number</label>
+				<input type="number" id="number" min="18" max="100" placeholder="Enter your age">
+			</div>
+
+			<div class="form-group">
+				<p id="for-select">Select one of these items</p>
+				<select id="dropdown">
+					<option value="1">Some 1</option>
+					<option value="2">Some 2</option>
+					<option value="3">Some 3</option>
+				</select>
+			</div>
+
+			<div class="form-group section-for-radio">
+				<p id="for-radio">Select one of the radio buttons, please</p>
+				<label>
+					<input name="someradio" type="radio">
+					Radio-1
+				</label>
+				<label>
+					<input name="someradio" type="radio">
+					Radio-2
+				</label>
+				<label>
+					<input name="someradio" type="radio">
+					Radio-3
+				</label>
+			</div>
+
+			<div class="form-group section-for-checkbox">
+				<p id="for-checkbox">What do you like?</p>
+				<label>
+					<input type="checkbox" name="somename">
+					Checkbox-1
+				</label>
+				<label>
+					<input type="checkbox" name="somename">
+					Checkbox-2
+				</label>
+				<label>
+					<input type="checkbox" name="somename">
+					Checkbox-3
+				</label>
+				<label>
+					<input type="checkbox" name="somename">
+					Checkbox-4
+				</label>
+				<label>
+					<input type="checkbox" name="somename">
+					Checkbox-5
+				</label>
+			</div>
+
+			<div class="form-group">
+				<label id="comment-label" for="comment">Any comments?</label>
+				<textarea name="comment" id="comment"></textarea>
+			</div>
+
+			<div class="form-group">
+				<input type="submit" id="submit">
+			</div>
+
+		</form>
+
+	</div>
+
+</body>
+</html>
