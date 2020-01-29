@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+.pad-w-200 {
+    padding: 0 200px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: #1c1c1c;
+    padding: 20px 0;
+}
+
+header div.pad-w-200 {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+div.pad-w-200 img {
+    width: 60px;
+}
+
+div.pad-w-200 nav {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 17px;
+}
+
+div.pad-w-200 nav a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    transition: 0.5s all ease;
+}
+
+div.pad-w-200 nav a:hover{
+    color: #e5474b;
+}
+
+
+section.description-block {
+    height: calc(100vh - 100px);
+    background-image: url(img/banner.jpg);
+    position: relative;
+}
+
+.description-block__info {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 42px;
+    color: white;
+    text-shadow: 0px 0px 1px #1c1c1c;
+    text-transform: uppercase;
+}
+
+.description-block_bold-text {
+    font-weight: 900;
+}
+
+.description-block__info-btn button{
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 12px 20px;
+    margin-top: 35px;
+    cursor: pointer;
+    transition: 0.5s all ease;
+    outline: none;
+}
+
+.description-block__info-btn button:hover{
+    background-color: white;
+    color: #762a2a;
+}
+
+
+
+.learn-more__content {
+    padding: 5em 0;
+}
+
+.learn-more__header {
+    margin: 0;
+    color: #e5474b;
+    font-weight: 600;
+    font-size: 1.8em;
+}
+
+.learn-more__text {
+    padding: 2em 0;
+    line-height: 1.7;
+    font-family: 'Raleway', sans-serif;
+}
+
+.learn-more__button {
+    border: 2px solid #e5474b;
+    background-color: transparent;
+    color: #e5474b;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 12px 20px;
+    cursor: pointer;
+    transition: 0.5s all ease;
+    outline: none;
+}
+
+.learn-more__button:hover {
+    background-color: #e5474b;
+    color: white;
+}
