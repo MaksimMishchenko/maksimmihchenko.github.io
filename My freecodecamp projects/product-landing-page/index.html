@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Landing Page</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="font-icons.css">
 </head>
 <body>
     
@@ -14,8 +15,8 @@
             <img src="img/logo.svg" alt="logo" id="header-img">
 
             <nav id="navbar">
-                <a href="#" class="nav-link">Go To Video</a>
-                <a href="#" class="nav-link">Items</a>
+                <a href="#video" class="nav-link">Go To Video</a>
+                <a href="#items" class="nav-link">Items</a>
                 <a href="#" class="nav-link">Form</a>
             </nav>
         </div>
@@ -59,7 +60,7 @@
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
                     allowfullscreen></iframe>
                 </div>
-                <div class="video-information__text learn-more__text">
+                <div class="video-information__text learn-more__text news-items__text-color">
                     Cumsan mollis eros. Pellentesque a diam sit amet mi magna ullamcorper vehicula. Integer adipiscin sem. Nullam quis massa sit amet lorem ipsum feugiat tempus.
                 </div>
             </div>
@@ -68,9 +69,34 @@
                 <div class="video-information__for-image">
                     <img class="video-information__image" src="img/watch.jpg" alt="Watch">
                 </div>
-                <div class="video-information__text learn-more__text">
+                <div class="video-information__text learn-more__text news-items__text-color">
                     Cumsan mollis eros. Pellentesque a diam sit amet mi magna ullamcorper vehicula. Integer adipiscin sem. Nullam quis massa sit amet lorem ipsum feugiat tempus.
                 </div>
+            </div>
+        </section>
+
+        <section class="news-items pad-w-200" id="items">
+            <div class="news-items__item1">
+                <div class="news-items__image landing-page-icon-camera"></div>
+                <div class="news-items__header learn-more__header_pink-color">TEMPUS FEUGIAT</div>
+                <div class="news-items__text-color learn-more__text">Morbi interdum mollis sapien. Sed ac risus. Phasellus lacinia, 
+                    magna lorem ullamcorper laoreet, lectus arcu.</div>
+                <input type="button" class="news-items__button learn-more__button_pink-color" value="LEARN MORE">
+            </div>
+            <div class="news-items__item2">
+                <div class="news-items__image landing-page-icon-img"></div>
+                <div class="news-items__header learn-more__header_pink-color">ALIQUAM NULLA</div>
+                <div class="news-items__text-color learn-more__text">Ut convallis, sem sit amet interdum consectetuer, 
+                    odio augue aliquam leo, nec dapibus tortor nibh sed.</div>
+                <input type="button" class="news-items__button learn-more__button_pink-color" value="LEARN MORE">
+            </div>
+        </div>
+            <div class="news-items__item3">
+                <div class="news-items__image landing-page-icon-desktop"></div>
+                <div class="news-items__header learn-more__header_pink-color">SED MAGNA</div>
+                <div class="news-items__text-color learn-more__text">Suspendisse mauris. Fusce accumsan mollis eros. 
+                    Pellentesque a diam sit amet mi ullamcorper vehicula.</div>
+                <input type="button" class="news-items__button learn-more__button_pink-color" value="LEARN MORE">
             </div>
         </section>
     </main>

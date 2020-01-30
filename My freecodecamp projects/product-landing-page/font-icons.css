@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'landing-page';
+    src:  url('fonts/landing-page.eot?523psb');
+    src:  url('fonts/landing-page.eot?523psb#iefix') format('embedded-opentype'),
+      url('fonts/landing-page.ttf?523psb') format('truetype'),
+      url('fonts/landing-page.woff?523psb') format('woff'),
+      url('fonts/landing-page.svg?523psb#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="landing-page-icon"], [class*="landing-page-icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'landing-page' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .landing-page-icon-camera:before {
+    content: "\f030";
+  }
+  .landing-page-icon-img:before {
+    content: "\f03e";
+  }
+  .landing-page-icon-desktop:before {
+    content: "\f108";
+  }
