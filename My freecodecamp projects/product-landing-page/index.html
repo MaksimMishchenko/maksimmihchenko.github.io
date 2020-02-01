@@ -99,6 +99,31 @@
                 <input type="button" class="news-items__button learn-more__button_pink-color" value="LEARN MORE">
             </div>
         </section>
+
+        <section class="form-wrapper">
+            <div class="form-wrapper__header">Get in touch</div>
+            <div class="form-wrapper__form">
+                <form id="form" action="https://www.freecodecamp.com/email-submit" method="GET">
+                    <div class="form-wrapper__name-and-email">
+                        <div class="form-wrapper__form-item">
+                            <label for="name">Name</label>
+                            <input type="text" placeholder="Enter your name" id="name">
+                        </div>
+                        <div class="form-wrapper__form-item">
+                            <label for="name">Email</label>
+                            <input name="email" type="email" placeholder="Enter your email" id="email" required>
+                        </div>
+                    </div>
+                    <div class="form-wrapper__form-item">
+                        <label for="message">Message</label>
+                        <textarea id="message"></textarea>
+                    </div>
+                    <div class="form-wrapper__form-item">
+                        <input type="submit" value="Send" id="submit">
+                    </div>
+                </form>
+            </div>
+        </section>
     </main>
 </body>
 </html>

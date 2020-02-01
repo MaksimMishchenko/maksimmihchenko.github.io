@@ -1,30 +1,151 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
 body {
 	margin: 0;
 	padding: 0;
-	width: 100%;
+	overflow-x: hidden;
+	font-family: 'Raleway', sans-serif;
+}
+
+.welcome-block {
+	width: 100vw;
 	height: 100vh;
-	background: linear-gradient(45deg, blue, red, purple);
-	font-family: Arial;
-}
-
-header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: darksalmon;
-}
-
-section {
+	/* background-image: url(images/mac2.jpg); */
+	background: linear-gradient( rgba(18, 18, 18, 0.88), rgba(0, 0, 0, 0.65) ), url(images/mac2.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
 	display: flex;
-    align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.welcome-block__for-header {
+	color: white;
+	text-align: center;
+	font-size: 1.2em;
+}
+
+.welcome-block__header {
+	font-size: 2.5em;
+	margin: 15px 0;
+	text-transform: uppercase;
+}
+
+.welcome-block__arrow-down {
+	position: absolute;
+    bottom: 3em;
+}
+
+
+.my-projects {
+	background-color: rgba(26, 35, 54, 0.83);
+	display: flex;
+	justify-content: center;
+	padding: 60px 0;
+}
+
+.my-projects__item {
+	background-color: rgba(0, 0, 0, 0.45);
+	width: calc(100% / 12 * 4);
+	padding-bottom: 30px;
+	color: white;
+	text-align: center;
+	border-radius: 10px;
+}
+
+.my-projects__image {
+	background-image: url(mac1.png);
+	background-size: cover;
+	width: 100%;
+	height: 250px;
+	border-top-left-radius: inherit;
+	border-top-right-radius: inherit;
+}
+
+.my-projects__header {
+	margin-top: 20px;
+	font-size: 21px;
+	text-transform: uppercase;
+}
+
+.my-projects__link {
+	text-decoration: none;
+	color: rgba(202, 62, 62, 0.57);
+}
+
+.my-projects__link:hover {
+	text-decoration: underline;
+}
+
+.my-projects__text {
+	padding: 20px 20px 30px 20px;
+	text-align: center;
+	font-size: 15px;
+	color: rgba(255,255,255,0.8);
+	line-height: 1.7;
+}
+
+.my-projects__button {
+	background: transparent;
+    border: 2px solid white;
+    padding: 10px 55px;
+    border-radius: 7px;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 14px;
+    color: white;
+    font-weight: 600;
+	letter-spacing: 1px;
+	transition: 0.5s all ease;
+	font-family: 'Roboto', sans-serif;
+}
+
+.my-projects__button:hover {
+	background-color: white;
+    text-transform: uppercase;
+	color:  rgba(0, 0, 0, 0.69);
+}
+
+
+.my-contacts {
+	background-color: rgb(23, 23, 31);
+	position: absolute;
+    right: 0;
+    left: 0;
+    padding: 50px 0;
+}
+
+.my-contacts__header {
+	text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+	color: white;
+}
+
+.my-contacts__for-list {
+	display: flex;
     justify-content: center;
 }
 
-section ul {
-	list-style-type: none;
+.my-contacts__list {
+	list-style: none;
+	width: fit-content;
+	font-family: 'Roboto', sans-serif;
+	color: rgba(255, 255, 255, 0.58);
+	margin-bottom: 0;
 }
 
-ul a {
-	color: antiquewhite;
+.my-contacts__list li:nth-child(2),
+.my-contacts__list li:nth-child(3) {
+	margin-top: 10px;
 }
+
+
+
+
+
+
 
