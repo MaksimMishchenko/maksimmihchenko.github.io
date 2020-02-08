@@ -25,27 +25,27 @@ body {
 .welcome-block__for-header {
 	color: white;
 	text-align: center;
-	font-size: 1.2em;
+	font-size: 2em;
 }
 
 .welcome-block__header {
-	font-size: 2.5em;
+	font-size: 3em;
 	margin: 15px 0;
 	text-transform: uppercase;
 }
 
 .welcome-block__for-button {
-	margin-top: 10px;
+	margin-top: 20px;
 }
 
 .welcome-block__button {
 	background: none;
     border: 1px solid white;
-    border-radius: 3px;
+    border-radius: 5px;
     color: white;
-    padding: 10px 30px;
+    padding: 15px 30px;
     outline: none;
-    font-size: 14px;
+    font-size: 2em;
 	text-transform: uppercase;
 	cursor: pointer;
 	transition: 0.6s all ease;
@@ -68,36 +68,43 @@ body {
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
-	padding: 60px 0;
+	padding: 120px;
 }
 
 .my-projects__item {
 	background-color: rgba(0, 0, 0, 0.45);
-	width: calc(100% / 12 * 4 - 50px);
-	padding-bottom: 30px;
+	width: calc(100% / 12 * 4 - 100px);
 	color: white;
 	text-align: center;
 	border-radius: 10px;
-	margin: 25px;
+	margin: 50px;
 	display: flex;
     flex-direction: column;
-    align-items: center;
+	align-items: center;
+	padding-bottom: 60px;
+	filter: contrast(0.7);
+	transition: 0.7s all ease;
+}
+
+.my-projects__item:hover {
+	box-shadow: 0px 0px 15px #cdcccc99;
+    filter: contrast(1);
 }
 
 .my-projects__image {
 	background-image: url(/content/img/mac1.png);
 	background-size: cover;
 	width: 100%;
-	height: 250px;
+	height: 500px;
 	border-top-left-radius: inherit;
 	border-top-right-radius: inherit;
 }
 
 .my-projects__header {
-	margin-top: 20px;
-	font-size: 21px;
 	text-transform: uppercase;
 	width: 80%;
+	margin-top: 50px;
+ 	font-size: 2.5em;
 }
 
 .my-projects__link {
@@ -110,21 +117,21 @@ body {
 }
 
 .my-projects__text {
-	padding: 20px 20px 30px 20px;
+	padding: 30px 30px 40px 30px;
 	text-align: center;
-	font-size: 15px;
+	font-size: 1.7em;
 	color: rgba(255,255,255,0.8);
 	line-height: 1.7;
 }
 
 .my-projects__button {
 	background: transparent;
-    border: 2px solid white;
-    padding: 10px 55px;
+    border: 1.5px solid white;
+    padding: 15px 55px;
     border-radius: 7px;
 	text-transform: uppercase;
 	text-decoration: none;
-	font-size: 14px;
+	font-size: 1.5em;
     color: white;
     font-weight: 600;
 	letter-spacing: 1px;
@@ -144,12 +151,12 @@ body {
 	position: absolute;
     right: 0;
     left: 0;
-    padding: 50px 0;
+	padding: 75px 0;
 }
 
 .my-contacts__header {
 	text-align: center;
-    font-size: 20px;
+    font-size: 2.5em;
     text-transform: uppercase;
 	color: white;
 }
@@ -162,6 +169,7 @@ body {
 .my-contacts__list {
 	list-style: none;
 	width: fit-content;
+	font-size: 1.8em;
 	font-family: 'Roboto', sans-serif;
 	color: rgba(255, 255, 255, 0.58);
 	margin-bottom: 0;
@@ -172,113 +180,57 @@ body {
 	margin-top: 10px;
 }
 
-@media screen and (max-width: 3000px) {
-
-	.welcome-block__for-header {
-		font-size: 2em;
-	}
-
-	.welcome-block__header {
-		font-size: 3em;
-	}
-
-	.welcome-block__button {
-		font-size: 2em;
-	}
+@media screen and (max-width: 2600px) {
 
 	.my-projects {
 		padding: 120px 60px;
 	}
 
-	.my-projects__image {
-		height: 500px;
+	.my-projects__item {
+		width: calc(100% / 12 * 4 - 70px);
+		margin: 35px;
+		padding-bottom: 45px;
 	}
 
-	.my-projects__item {
-		padding-bottom: 60px;
+	.my-projects__image {
+		height: 450px;
 	}
 
 	.my-projects__header {
-		margin-top: 50px;
-		font-size: 2.5em;
+		margin-top: 40px;
 	}
 
-	.my-projects__text, .my-projects__button {
-		font-size: 1.5em;
-	}
 
-	.my-projects__text {
-		padding: 30px 30px 40px 30px;
-	}
 
-	.my-contacts {
-		padding: 75px 0;
-	}
-
-	.my-contacts__header {
-		font-size: 2em;
-	}
-
-	.my-contacts__list {
-		font-size: 1.5em;
-	}
-
-}
-
-@media screen and (max-width: 2500px) {
-
-	.welcome-block__for-header {
-		font-size: 1.5em;
-	}
-
-	.welcome-block__header {
-		font-size: 2.5em;
-	}
-
-	.welcome-block__button {
-		font-size: 1em;
-	}
 }
 
 @media screen and (max-width: 2000px) {
 
 	.welcome-block__for-header {
-		font-size: 1em;
+		font-size: 1.3em;
 	}
 
 	.welcome-block__header {
 		font-size: 2.5em;
 	}
 
+	.welcome-block__for-button {
+		margin-top: 10px;
+	}
+
 	.welcome-block__button {
-		font-size: 0.8em;
+		font-size: 1em;
+		padding: 10px 25px;
 	}
 
-	.my-projects__image {
-		height: 400px;
+	.my-projects {
+		padding: 60px;
 	}
 
-	.my-projects__header {
-		font-size: 2.3em;
-	}	
-
-	.my-projects__text {
-		font-size: 1.3em;
-	}
-
-	.my-projects__button {
-		font-size: 1.3em;
-	}
-
-	.my-contacts__header {
-		font-size: 1.8em;
-	}
-}
-
-
-@media screen and (max-width: 1900px) {
 	.my-projects__item {
-		padding-bottom: 45px;
+		width: calc(100% / 12 * 4 - 50px);
+		margin: 25px;
+		padding-bottom: 30px;
 	}
 
 	.my-projects__image {
@@ -292,67 +244,140 @@ body {
 
 	.my-projects__text {
 		padding: 20px 20px 30px 20px;
+    	font-size: 1.4em;
 	}
 
 	.my-projects__button {
-		font-size: 1.1em;
-	}
-
-	.my-contacts__list {
+		padding: 10px 45px;
 		font-size: 1.3em;
-	}
-}
-
-
-@media screen and (max-width: 1600px) {
-	.my-projects {
-		padding: 60px;
-	}
-
-	.my-projects__image {
-		height: 300px;
-	}
-
-	.my-projects__header {
-		font-size: 1.5em;
-	}
-
-	.my-projects__text {
-		font-size: 1.1em;
-	}
-
-	.my-projects__button {
-		font-size: 1em;
 	}
 
 	.my-contacts__header {
+		font-size: 2em;
+	}
+
+	.my-contacts__list {
 		font-size: 1.5em;
+	}
+}
+
+@media screen and (max-width: 1700px) {
+
+	.welcome-block__for-header {
+		font-size: 1.2em;
+	}
+
+	.my-projects__image {
+		height: 270px;
+	}
+
+	.my-projects__header {
+		margin-top: 20px;
+    	font-size: 1.7em;
+	}
+
+	.my-projects__text {
+		font-size: 1.2em;
+	}
+
+	.my-projects__button {
+		font-size: 1.2em;
+	}
+
+	.my-contacts__header {
+		font-size: 1.7em;
+	}
+
+	.my-contacts__list {
+		font-size: 1.4em;
+	}
+}
+
+@media screen and (max-width: 1600px) {
+
+	.welcome-block__for-header {
+		font-size: 1em;
+	}
+
+	.welcome-block__button {
+		font-size: 0.8em;
+	}
+
+	.my-projects__image {
+		height: 250px;
+	}
+
+	.my-projects__header {
+		font-size: 1.4em;
+	}
+
+	.my-projects__text {
+		font-size: 1em;
+    	padding: 10px 10px 20px 10px;
+	}
+
+	.my-projects__button  {
+		padding: 8px 35px;
+		font-size: 0.8em;
+	}
+
+	.my-contacts__header {
+		font-size: 1.4em;
+	}
+
+	.my-contacts__list {
+		font-size: 1.1em;
 	}
 }
 
 @media screen and (max-width: 1300px) {
 
-	.my-projects__item {
-		width: calc(100% / 12 * 6 - 50px);
+	.my-projects {
+		padding: 40px;
 	}
-}
 
-@media screen and (max-width: 1200px) {
+	.my-projects__item {
+		width: calc(100% / 12 * 4 - 30px);
+		margin: 15px;
+	}
 
 	.my-projects__image {
-		height: 250px;
+		height: 220px;
 	}
+
+	.my-projects__header {
+		font-size: 1.2em;
+	}
+
+	.my-projects__text {
+		font-size: 0.9em;
+	}
+
+	.my-contacts__header {
+		font-size: 1.2em;
+	}
+
+	.my-contacts__list {
+		font-size: 1em;
+	}
+
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 1050px) {
 
-	.my-projects__item {
-		width: calc(100% / 12 * 12 - 50px);
+	.welcome-block__for-header {
+		font-size: 0.9em;
 	}
+
+	.welcome-block__for-button {
+		margin-top: 5px;
+	}
+
+	.welcome-block__button {
+		padding: 7px 20px;
+	}
+
 }
-
-
-
 
 
 
