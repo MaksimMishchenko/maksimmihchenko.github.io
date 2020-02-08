@@ -49,7 +49,7 @@ div.pad-w-200 nav a:hover{
 
 section.description-block {
     height: calc(100vh - 100px);
-    background-image: url(img/banner.jpg);
+    background-image: url(/My-freecodecamp-projects/product-landing-page/content/img/banner.jpg);
     position: relative;
 }
 

@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'landing-page';
-    src:  url('fonts/landing-page.eot?523psb');
-    src:  url('fonts/landing-page.eot?523psb#iefix') format('embedded-opentype'),
-      url('fonts/landing-page.ttf?523psb') format('truetype'),
-      url('fonts/landing-page.woff?523psb') format('woff'),
-      url('fonts/landing-page.svg?523psb#icomoon') format('svg');
+    src:  url('/My-freecodecamp-projects/product-landing-page/content/fonts/landing-page.eot?523psb');
+    src:  url('/My-freecodecamp-projects/product-landing-page/content/fonts/landing-page.eot?523psb#iefix') format('embedded-opentype'),
+      url('/My-freecodecamp-projects/product-landing-page/content/fonts/landing-page.ttf?523psb') format('truetype'),
+      url('/My-freecodecamp-projects/product-landing-page/content/fonts/landing-page.woff?523psb') format('woff'),
+      url('/My-freecodecamp-projects/product-landing-page/content/fonts/landing-page.svg?523psb#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: block;
