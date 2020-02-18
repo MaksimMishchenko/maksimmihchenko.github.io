@@ -515,6 +515,7 @@ body {
 
 	.my-projects__item {
 		margin: 15px 0px;
+		filter: contrast(1);
 	}
 
 	.my-projects__image {
