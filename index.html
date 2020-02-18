@@ -2,8 +2,10 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Mishchenko Maksim</title>
 	<link rel="stylesheet" href="/content/css/style.css">
+	<link rel="stylesheet" href="/content/css/icons.css">
 </head>
 <body>
 
@@ -15,13 +17,11 @@
 		<div class="welcome-block__for-button">
 			<a href="#contacts" class="welcome-block__button">Contact me</a>
 		</div>
-		<div class="welcome-block__arrow-down main-page-icon-arrow-down">
-			<a href="#" class=""></a>
-		</div>
+		<a href="#my-projects" class="welcome-block__arrow-down portfolioicon-arrowdown"></a>
 	</header>
 
 	<main>
-		<section class="my-projects">
+		<section class="my-projects" id="my-projects">
 			<div class="my-projects__item my-projects__item-1">
 				<div class="my-projects__image"></div>
 				<div class="my-projects__header">
@@ -71,18 +71,24 @@
 		<div class="my-contacts__for-list">
 			<ul class="my-contacts__list">
 				<li>
-					<span>Email: </span> max75583@gmail.com
+					<span class="my-contacts__for-icon portfolioicon-mail" id="for-mail"></span>
+					<span>Email: </span> <span class="my-contacts__list-item" id="email">max75583@gmail.com</span>
 				</li>
 				<li>
-					<span>Phone: </span> +380731036642
+					<span class="my-contacts__for-icon portfolioicon-phone" id="for-phone"></span>
+					<span>Phone: </span> <span class="my-contacts__list-item" id="phone">+380731036642</span>
 				</li>
 				<li>
-					<span>Skype: </span> Some
+					<span class="my-contacts__for-icon portfolioicon-skype" id="for-skype"></span>
+					<span>Skype: </span> <span class="my-contacts__list-item" id="skype">skype</span>
 				</li>
 			</ul>
 		</div>
+		<a class="my-contacts__validate" href="http://users.skynet.be/mgueury/mozilla/">
+			<img src="http://users.skynet.be/mgueury/mozilla/tidy_32.gif"
+			alt="Validated by HTML Validator (based on Tidy) " height="32" width="78"/>
+		  </a>
 	</footer>
 
-	<script src="/content/js/script.js"></script>
 </body>
 </html>

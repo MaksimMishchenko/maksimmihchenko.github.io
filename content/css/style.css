@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	margin: 0;
 	padding: 0;
@@ -59,7 +63,16 @@ body {
 
 .welcome-block__arrow-down {
 	position: absolute;
-    bottom: 3em;
+	bottom: 1em;
+	text-decoration: none;
+    color: white;
+	font-size: 20px;
+	transition: 0.6s all ease;
+}
+
+.welcome-block__arrow-down:hover {
+	transform: scale(1.5);
+    color: #ff00009c;
 }
 
 
@@ -147,6 +160,9 @@ body {
 
 
 .my-contacts {
+	display: flex;
+    flex-direction: column;
+    align-items: center;
 	background-color: rgb(23, 23, 31);
 	position: absolute;
     right: 0;
@@ -170,14 +186,29 @@ body {
 	list-style: none;
 	width: fit-content;
 	font-size: 1.8em;
-	font-family: 'Roboto', sans-serif;
 	color: rgba(255, 255, 255, 0.58);
 	margin-bottom: 0;
+}
+
+.my-contacts__list-item {
+	font-family: 'Roboto', sans-serif;
 }
 
 .my-contacts__list li:nth-child(2),
 .my-contacts__list li:nth-child(3) {
 	margin-top: 10px;
+}
+
+.my-contacts__for-icon {
+	margin-right: 15px;
+    font-size: 20px;
+    position: relative;
+    top: 3px;
+}
+
+.my-contacts__validate {
+	position: absolute;
+    bottom: 15px;
 }
 
 @media screen and (max-width: 2600px) {
@@ -377,8 +408,148 @@ body {
 		padding: 7px 20px;
 	}
 
+	.my-projects {
+		padding-bottom: 20px;
+	}
+
+	.my-projects__image {
+		height: 180px;
+	}
+
+	.my-projects__text {
+		font-size: 0.8em;
+	}
+
 }
 
+@media screen and (max-width: 900px) {
+
+	.welcome-block {
+		width: auto;
+	}
+
+	.my-projects__item {
+		width: calc(100% / 12 * 6 - 30px);
+	}
+
+	.my-projects__image {
+		height: 210px;
+	}
+}
+
+@media screen and (max-width: 750px) {
+
+	.welcome-block__for-header {
+		font-size: 1.2em;
+	}
+
+	.welcome-block__button {
+		padding: 8px 30px;
+		font-size: 0.9em;
+	}
+
+	.welcome-block__arrow-down {
+		bottom: 0.5em;
+		font-size: 25px;
+	}
+
+	.my-projects__item {
+		width: calc(100% / 12 * 12 - 30px);
+		margin: 30px 100px;
+	}
+
+	.my-projects__image {
+		height: 330px;
+	}
+
+	.my-projects__header {
+		font-size: 1.5em;
+		width: 55%;
+	}
+
+	.my-projects__text {
+		font-size: 1.2em;
+	}
+
+	.my-projects__button {
+		padding: 10px 45px;
+    	font-size: 1em;
+	}
+
+	.my-contacts__header {
+		font-size: 1.4em;
+	}
+
+	.my-contacts__for-list {
+		font-size: 1.1em;
+	}
+}
+
+@media screen and (max-width: 450px) {
+
+	.welcome-block__for-header {
+		font-size: 0.8em;
+	}
+
+	.welcome-block__header {
+		font-size: 2em;
+		margin: 10px 0;
+	}
+
+	.welcome-block__for-button {
+		margin-top: 5px;
+	}
+
+	.welcome-block__button {
+		font-size: 0.7em;
+    	padding: 7px 25px;
+	}
+
+	.welcome-block__arrow-down {
+		font-size: 20px;
+	}
+
+	.my-projects {
+		padding: 15px;
+	}
+
+	.my-projects__item {
+		margin: 15px 0px;
+	}
+
+	.my-projects__image {
+		height: 200px;
+	}
+
+	.my-projects__header {
+		font-size: 1.2em;
+		width: 90%;
+	}
+
+	.my-projects__text {
+		font-size: 0.9em;
+	}
+
+	.my-projects__button {
+		padding: 8px 35px;
+		font-size: 0.7em;
+	}
+
+	.my-contacts__header {
+		font-size: 1.2em;
+	}
+
+	.my-contacts__for-list {
+		font-size: 1em;
+	}
+
+	.my-contacts__for-icon {
+		margin-right: 5px;
+		font-size: 18px;
+		top: 2px;
+	}
+	
+}
 
 
 

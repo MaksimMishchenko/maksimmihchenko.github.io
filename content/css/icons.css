@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'portfolio';
+    src:  url('../fonts/portfolio.eot?nko7h1');
+    src:  url('../fonts/portfolio.eot?nko7h1#iefix') format('embedded-opentype'),
+      url('../fonts/portfolio.ttf?nko7h1') format('truetype'),
+      url('../fonts/portfolio.woff?nko7h1') format('woff'),
+      url('../fonts/portfolio.svg?nko7h1#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="portfolioicon-"], [class*="portfolioicon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'portfolio' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .portfolioicon-arrowdown:before {
+    content: "\e900";
+  }
+  .portfolioicon-mail:before {
+    content: "\e901";
+  }
+  .portfolioicon-phone:before {
+    content: "\e902";
+  }
+  .portfolioicon-skype:before {
+    content: "\e903";
+  }
+  
