@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+
+@import "./welcome-block.scss";
+@import "./my-projects.scss";
+@import "./my-contacts.scss";
+
+html, body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+	padding: 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.site-padding {
+    padding: 40px;
+
+    @media screen and (max-width: 1200px) {
+        padding: 30px;
+    }
+
+    @media screen and (max-width: 800px) {
+        padding: 20px 30px;
+    }
+
+    @media screen and (max-width: 450px) {
+        padding: 20px 20px;
+    }
+}

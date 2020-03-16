@@ -1,0 +1,13 @@
+{{#each .}}
+<div class="my-projects__item">
+    <div class="my-projects__image b-lazy" data-src="/src/assets/img/ {{image}}"></div>
+    <div class="my-projects__header">
+        {{header}}
+        <a class="my-projects__link" target="_blank" href="{{additionalLink}}">{{addLinkTitle}}</a>
+    </div>
+    <div class="my-projects__text">
+        {{text}}
+    </div>
+    <a href="{{projectLink}}" target="_blank" class="my-projects__button">watch</a>
+</div>
+{{/each}}

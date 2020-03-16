@@ -1,0 +1,18 @@
+[
+    {
+        "image": "/src/assets/img/top_main_site_banner.jpg",
+        "header": "My projects with",
+        "additionalLink": "https://www.freecodecamp.org/",
+        "addLinkTitle": "freecodecamp",
+        "text": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum excepturi dolorum dignissimos distinctio officiis! Molestias, est eius! Nisi eveniet voluptatem dolorum cum atque, corporis maxime magni maiores, laudantium totam a!",
+        "projectLink": "#"
+    },
+    {
+        "image": "top_main_site_banner.jpg",
+        "header": "My projects with",
+        "additionalLink": "https://www.freecodecamp.org/",
+        "addLinkTitle": "freecodecamp",
+        "text": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum excepturi dolorum dignissimos distinctio officiis! Molestias, est eius! Nisi eveniet voluptatem dolorum cum atque, corporis maxime magni maiores, laudantium totam a!",
+        "projectLink": "#"
+    }
+]

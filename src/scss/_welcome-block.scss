@@ -1,0 +1,151 @@
+.welcome-block {
+    width: 100vw;
+	height: 100vh;
+	//background: linear-gradient( rgba(18, 18, 18, 0.88), rgba(0, 0, 0, 0.65) ), url(/src/assets/img/top_main_site_banner.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	&:after {
+		content: "";
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background: linear-gradient( rgba(18, 18, 18, 0.88), rgba(0, 0, 0, 0.65) );
+	}
+
+	@media screen and (max-width: 450px) {
+		background-position-x: -150px;
+	}
+}
+
+.welcome-block__content-wrapper {
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+}
+
+.welcome-block__for-header {
+	color: white;
+	text-align: center;
+	font-size: 1.4em;
+
+	@media screen and (max-width: 1200px) {
+		font-size: 1.2em;
+	}
+
+	@media screen and (max-width: 500px) {
+		font-size: 1.1em;
+	}
+
+	@media screen and (max-width: 450px) {
+		font-size: 0.75em;
+    	letter-spacing: 0.3px;
+	}
+
+	@media screen and (max-width: 300px) {
+		font-size: 0.5em;
+	}
+}
+
+.welcome-block__header {
+	font-size: 2.5em;
+	margin: 15px 0;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+
+	@media screen and (max-width: 1200px) {
+		font-size: 2.5em;
+	}
+
+	@media screen and (max-width: 650px) {
+		font-size: 2em;
+		letter-spacing: unset;
+	}
+
+	@media screen and (max-width: 500px) {
+		font-size: 2.1em;
+	}
+
+	@media screen and (max-width: 450px) {
+    	margin: 5px 0;
+	}
+
+	@media screen and (max-width: 300px) {
+		font-size: 2.2em;
+    	margin: 10px 0;
+	}
+}
+
+.welcome-block__for-button {
+	margin-top: 15px;
+
+	@media screen and (max-width: 1200px) {
+		margin-top: 10px;
+	}
+
+	@media screen and (max-width: 450px) {
+		margin-top: 5px;
+	}
+
+	@media screen and (max-width: 300px) {
+		margin-top: 0;
+	}
+}
+
+.welcome-block__button {
+	background: none;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 30px;
+    outline: none;
+    font-size: 1em;
+	text-transform: uppercase;
+	cursor: pointer;
+	transition: 0.6s all ease;
+	text-decoration: none;
+
+	@media screen and (max-width: 1200px) {
+		padding: 8px 30px;
+    	font-size: 0.8em;
+	}
+
+	@media screen and (max-width: 450px) {
+		font-size: 0.6em;
+		padding: 7px 25px;
+	}
+
+	@media screen and (max-width: 300px) {
+		font-size: 0.45em;
+    	padding: 5px 20px;
+	}
+}
+
+.welcome-block__button:hover {
+	background-color: white;
+	color: black;
+}
+
+.welcome-block__arrow-down {
+	position: absolute;
+	bottom: 1em;
+	text-decoration: none;
+    color: white;
+	font-size: 20px;
+	transition: 0.6s all ease;
+}
+
+.welcome-block__arrow-down:hover {
+	transform: scale(1.5);
+    color: #ff00009c;
+}
