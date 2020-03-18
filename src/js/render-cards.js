@@ -8,9 +8,9 @@ window.addEventListener('load', () => {
     let forTemplate = document.querySelector("#for-template");
 
 
-   async function getData() {
+   function getData() {
 
-    return fetch("/src/assets/myDB/cardsinfo.json")
+    return fetch("/dist/static/myDB/cardsinfo.json")
     .then(response => response.json())
     .then(data => {
          data.forEach(item => {
@@ -21,9 +21,9 @@ window.addEventListener('load', () => {
    }
 
 
-   async function renderCard() {
+   function renderCard() {
 
-    fetch("/src/assets/html-templates/project-card.html")
+    fetch("/dist/static/html-templates/project-card.html")
     .then(response => response.text())
     .then(data => {
         let template = Handlebars.compile(data)(allCards);

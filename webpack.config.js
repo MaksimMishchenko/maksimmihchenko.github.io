@@ -57,7 +57,9 @@ module.exports = {
             } 
         }),
         
-        new CleanWebpackPlugin(),
+        new CleanWebpackPlugin({
+            cleanOnceBeforeBuildPatterns: ['!static*', '**.js', '**.css']
+        }),
 
         new MiniCssExtractPlugin({
             filename: "[name].[hash].css"

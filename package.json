@@ -2,7 +2,7 @@
   "name": "maksimmishchenko.github.io",
   "version": "1.0.0",
   "description": "You can open this page, if you want to do this, copy MaksimMishchenko.github.io and paste into the search bar.",
-  "homepage": "https://maksimmishchenko.github.io/portfolio",
+  "homepage": "https://maksimmishchenko.github.io/dist",
   "main": "render-template.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
