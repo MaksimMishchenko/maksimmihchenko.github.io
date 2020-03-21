@@ -1,41 +1,272 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
 body {
 	margin: 0;
 	padding: 0;
 	width: 100%;
-	height: 100vh;
-	background: linear-gradient(45deg, blue, red, purple);
-	font-family: Arial;
+	font-family: 'Raleway', sans-serif;
 }
 
-header {
-    display: flex;
+.block-for-header {
+	display: flex;
     align-items: center;
-    justify-content: center;
-    color: darksalmon;
+	justify-content: center;
+	background-color: #17171F;
+    color: #fefefe;
 }
 
-h2 a {
-	color: darksalmon;
+.block-for-header__header {
+	font-weight: 500;
+	text-transform: uppercase;
+	font-size: 1.8em;
+	margin: 30px 0;
 }
 
-main {
+.main-content {
 	display: flex;
 	justify-content: center;
-    align-items: center;
+	align-items: center;
+	background-color: #414858;
 }
 
-.projects-list {
+.main-content__projects {
+	width: 100%;
 	display: flex;
 	justify-content: center;
+	padding: 80px 40px;
+	flex-wrap: wrap;
+}
+
+.main-content__project-card {
+	width: calc(100% / 12 * 6 - 80px);
+	margin: 0 20px;
+	background-color: #242830;
+	padding: 5px 10px;
+	border-radius: 3px;
+}
+
+.main-content__img {
+	background-size: cover;
+	width: 100%;
+	height: 600px;
+}
+
+.main-content__project-card-1 .main-content__img {
+	background-image: url(/My-freecodecamp-projects/assets/img/tribute_page.jpg);
+}
+
+.main-content__project-card-2 .main-content__img {
+	background-image: url(/My-freecodecamp-projects/assets/img/survey_form.jpg);
+}
+
+.main-content__buttons {
+	display: flex;
     align-items: center;
-    height: 75vh;
+	justify-content: space-between;
+	padding: 5px 0;
 }
 
-.projects-list ul {
-	list-style-type: none;
+.main-content__card-header {
+	color: #fefefe;
 }
 
-ul a {
-	color: antiquewhite;
+.main-content__button {
+	text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    border-radius: 3px;
+	padding: 5px 8px;
+	transition: 0.5s all ease;
 }
+
+.main-content__button:hover {
+	color: #242830;
+    background-color: white;
+}
+
+.my-contacts {
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+	background-color: rgb(23, 23, 31);
+	position: absolute;
+    right: 0;
+    left: 0;
+	padding: 75px 0;
+}
+
+.my-contacts__header {
+	text-align: center;
+    font-size: 1.3em;
+    text-transform: uppercase;
+	color: white;
+}
+
+.my-contacts__for-list {
+	display: flex;
+	justify-content: center;
+}
+
+.my-contacts__list {
+	list-style: none;
+	width: fit-content;
+	font-size: 1.1em;
+	color: rgba(255, 255, 255, 0.58);
+	margin-bottom: 0;
+}
+
+.my-contacts__list-item {
+	font-family: 'Roboto', sans-serif;
+}
+
+.my-contacts__list li:nth-child(2),
+.my-contacts__list li:nth-child(3) {
+	margin-top: 10px;
+}
+
+.my-contacts__for-icon {
+	margin-right: 15px;
+    font-size: 20px;
+    position: relative;
+    top: 3px;
+}
+
+.my-contacts__validate {
+	position: absolute;
+	bottom: 15px;
+}
+
+@media screen and (max-width: 2300px) {
+	.main-content__img {
+		height: 400px;
+	}
+}
+
+@media screen and (max-width: 1700px) {
+	.main-content__img {
+		height: 310px;
+	}
+}
+
+@media screen and (max-width: 1500px) {
+	.main-content__project-card {
+		width: calc(100% / 12 * 6 - 80px);
+		margin: 20px;
+	}
+
+	.main-content__img {
+		height: 250px;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	.block-for-header__header {
+		font-size: 1.5em;
+		margin: 20px 0;
+	}
+
+	.main-content__img {
+		height: 200px;
+	}
+
+	.main-content__button {
+		padding: 3px 5px;
+	}
+}
+
+@media screen and (max-width: 900px) {
+
+	.main-content__projects {
+		padding: 20px 70px;
+	}
+
+	.main-content__project-card {
+		width: calc(100% / 12 * 12);
+		margin: 0;
+	}
+
+	.main-content__project-card-2 {
+		margin-top: 20px;
+	}
+
+	.main-content__buttons, .my-contacts__header {
+		font-size: 0.9em;
+	}
+
+	.main-content__buttons {
+		padding: 0;
+	}
+
+	.main-content__img {
+		height: 270px;
+	}
+
+	.my-contacts {
+		padding: 50px 0;
+	}
+
+	.my-contacts__list {
+		font-size: 0.8em;
+		padding: 0;
+	}
+}
+
+@media screen and (max-width: 700px) {
+
+	.main-content__projects {
+		padding: 20px 50px;
+	}
+
+	/* .main-content__project-card {
+		width: calc(100% / 12 * 12);
+		margin: 0;
+	} */
+
+	.main-content__img {
+		height: 200px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.main-content__projects {
+		padding: 20px 10px;
+	}
+
+	.block-for-header__header {
+		font-size: 1.2em;
+	}
+
+	.main-content__project-card-2 {
+		margin-top: 10px;
+	}
+
+	.main-content__img {
+		height: 170px;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.main-content__img {
+		height: 160px;
+	}
+}
+
+@media screen and (max-width: 350px) {
+	.main-content__img {
+		height: 150px;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.main-content__img {
+		height: 135px;
+	}
+}
+
+@media screen and (max-width: 300px) {
+	.block-for-header__header {
+		font-size: 1em;
+	}
+}
+
 
