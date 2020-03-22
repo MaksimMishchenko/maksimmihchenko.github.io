@@ -185,6 +185,10 @@ body {
 }
 
 @media screen and (max-width: 500px) {
+	.block-for-header__header {
+		font-size: 1.1em;
+	}
+
 	.main-content__projects {
 		padding: 20px 10px;
 	}
