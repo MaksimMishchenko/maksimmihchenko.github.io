@@ -15,21 +15,11 @@
 
 .my-contacts__header {
 	text-align: center;
-    font-size: 1.3em;
+    font-size: 1em;
     text-transform: uppercase;
 	color: white;
-
-	@media screen and (max-width: 1300px) {
-		font-size: 1.1em;
-	}
-
-	@media screen and (max-width: 800px) {
-		font-size: 1.2em;
-	}
-
-	@media screen and (max-width: 450px) {
-		font-size: 0.7em;
-	}
+	font-weight: 600;
+    letter-spacing: 1.5px;
 }
 
 .my-contacts__for-list {
@@ -44,22 +34,12 @@
 .my-contacts__list {
 	list-style: none;
 	width: fit-content;
-	font-size: 1.1em;
+	font-size: 0.9em;
 	color: rgba(255, 255, 255, 0.58);
 	margin-bottom: 0;
 
-	@media screen and (max-width: 1300px) {
-		font-size: 1em;
-	}
-
-	@media screen and (max-width: 800px) {
-		font-size: 0.9em;
-		margin: 0;
-    	padding: 0;
-	}
-
-	@media screen and (max-width: 450px) {
-		font-size: 0.6em;
+	@media screen and (max-width: 500px) {
+		padding: 0;
 	}
 }
 

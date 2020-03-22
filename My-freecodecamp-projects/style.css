@@ -19,6 +19,7 @@ body {
 	font-weight: 500;
 	text-transform: uppercase;
 	font-size: 1.8em;
+	letter-spacing: 1px;
 	margin: 30px 0;
 }
 
@@ -48,15 +49,6 @@ body {
 .main-content__img {
 	background-size: cover;
 	width: 100%;
-	height: 600px;
-}
-
-.main-content__project-card-1 .main-content__img {
-	background-image: url(/My-freecodecamp-projects/assets/img/tribute_page.jpg);
-}
-
-.main-content__project-card-2 .main-content__img {
-	background-image: url(/My-freecodecamp-projects/assets/img/survey_form.jpg);
 }
 
 .main-content__buttons {
@@ -64,6 +56,7 @@ body {
     align-items: center;
 	justify-content: space-between;
 	padding: 5px 0;
+	font-size: 1em;
 }
 
 .main-content__card-header {
@@ -97,7 +90,9 @@ body {
 
 .my-contacts__header {
 	text-align: center;
-    font-size: 1.3em;
+	font-size: 1em;
+	font-weight: 600;
+	letter-spacing: 1.5px;
     text-transform: uppercase;
 	color: white;
 }
@@ -110,7 +105,7 @@ body {
 .my-contacts__list {
 	list-style: none;
 	width: fit-content;
-	font-size: 1.1em;
+	font-size: 0.9em;
 	color: rgba(255, 255, 255, 0.58);
 	margin-bottom: 0;
 }
@@ -136,26 +131,10 @@ body {
 	bottom: 15px;
 }
 
-@media screen and (max-width: 2300px) {
-	.main-content__img {
-		height: 400px;
-	}
-}
-
-@media screen and (max-width: 1700px) {
-	.main-content__img {
-		height: 310px;
-	}
-}
-
 @media screen and (max-width: 1500px) {
 	.main-content__project-card {
 		width: calc(100% / 12 * 6 - 80px);
 		margin: 20px;
-	}
-
-	.main-content__img {
-		height: 250px;
 	}
 }
 
@@ -163,10 +142,6 @@ body {
 	.block-for-header__header {
 		font-size: 1.5em;
 		margin: 20px 0;
-	}
-
-	.main-content__img {
-		height: 200px;
 	}
 
 	.main-content__button {
@@ -189,16 +164,8 @@ body {
 		margin-top: 20px;
 	}
 
-	.main-content__buttons, .my-contacts__header {
-		font-size: 0.9em;
-	}
-
 	.main-content__buttons {
 		padding: 0;
-	}
-
-	.main-content__img {
-		height: 270px;
 	}
 
 	.my-contacts {
@@ -206,7 +173,6 @@ body {
 	}
 
 	.my-contacts__list {
-		font-size: 0.8em;
 		padding: 0;
 	}
 }
@@ -216,15 +182,6 @@ body {
 	.main-content__projects {
 		padding: 20px 50px;
 	}
-
-	/* .main-content__project-card {
-		width: calc(100% / 12 * 12);
-		margin: 0;
-	} */
-
-	.main-content__img {
-		height: 200px;
-	}
 }
 
 @media screen and (max-width: 500px) {
@@ -232,41 +189,8 @@ body {
 		padding: 20px 10px;
 	}
 
-	.block-for-header__header {
-		font-size: 1.2em;
-	}
-
 	.main-content__project-card-2 {
 		margin-top: 10px;
 	}
-
-	.main-content__img {
-		height: 170px;
-	}
 }
-
-@media screen and (max-width: 400px) {
-	.main-content__img {
-		height: 160px;
-	}
-}
-
-@media screen and (max-width: 350px) {
-	.main-content__img {
-		height: 150px;
-	}
-}
-
-@media screen and (max-width: 320px) {
-	.main-content__img {
-		height: 135px;
-	}
-}
-
-@media screen and (max-width: 300px) {
-	.block-for-header__header {
-		font-size: 1em;
-	}
-}
-
 
