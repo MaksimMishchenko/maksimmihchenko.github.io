@@ -178,6 +178,16 @@ section.description-block {
     box-shadow: 0px 0px 10px #e7e7e7;
 }
 
+.news-items__item2 {
+    position: relative;
+}
+
+.news-items__item2 .news-items__button {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+}
+
 .news-items .landing-page-icon-camera,
 .news-items .landing-page-icon-img,
 .news-items .landing-page-icon-desktop {
