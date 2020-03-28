@@ -160,7 +160,7 @@ body {
 		margin: 0;
 	}
 
-	.main-content__project-card-2 {
+	.main-content__project-card-2, .main-content__project-card-3 {
 		margin-top: 20px;
 	}
 

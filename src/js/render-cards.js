@@ -22,6 +22,8 @@ window.addEventListener('load', () => {
 
 
    function renderCard() {
+    
+
 
     fetch("/dist/assets/html-templates/project-card.html")
     .then(response => response.text())
