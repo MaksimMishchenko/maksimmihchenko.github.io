@@ -55,6 +55,8 @@ section.description-block {
     height: calc(100vh - 100px);
     background-image: url(/My-freecodecamp-projects/product-landing-page/content/img/banner.jpg);
     position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .description-block__info {
@@ -66,6 +68,10 @@ section.description-block {
     color: white;
     text-shadow: 0px 0px 1px #1c1c1c;
     text-transform: uppercase;
+}
+
+.description-block__info-text {
+    width: 85%;
 }
 
 .description-block_bold-text {
@@ -331,6 +337,10 @@ section.description-block {
 
     div.pad-w-200 nav {
         width: 50%;
+    }
+
+    .description-block__info-text {
+        width: 100%;
     }
 
     .video-information__items-wrapper {
