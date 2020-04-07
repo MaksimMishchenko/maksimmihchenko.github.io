@@ -4,40 +4,55 @@ import "../scss/site.scss"
 window.addEventListener('load', () => {
 
 
-    let allCards = [];
-    let forTemplate = document.querySelector("#for-template");
+    function renderCard(obj, selector) {
 
+        sendRequest("GET", "/dist/assets/html-templates/project-card.html")
+        .then(response => {
+            let template = Handlebars.compile(response)(obj);
 
-   function getData() {
+            document.querySelector("#for-template").innerHTML = template;
+        });
 
-    return fetch("/dist/assets/myDB/cardsinfo.json")
-    .then(response => response.json())
+    }
+
+   
+    function sendRequest(method, url, body = null) {
+
+        return new Promise((resolve, reject) => {
+
+            let xhr = new XMLHttpRequest();
+
+            xhr.open(method, url);
+            xhr.setRequestHeader("Content-Type", "application/json");
+
+            xhr.onload = () => {
+                if(xhr.status >= 400) {
+                    reject(xhr.response);
+                } else {
+                    resolve(xhr.response);
+                }
+            }
+
+            xhr.onerror = () => {
+                reject(xhr.response);
+            }
+
+            xhr.send(JSON.stringify(body));
+        });
+    }
+
+    sendRequest("GET", "/dist/assets/myDB/cardsinfo.json")
     .then(data => {
-         data.forEach(item => {
-             allCards.push(item);
-         });   
-    });
+        renderCard(JSON.parse(data), "#for-template");
+    })
+    .catch(err => console.log(err));
 
-   }
-
-
-   function renderCard() {
     
 
-
-    fetch("/dist/assets/html-templates/project-card.html")
-    .then(response => response.text())
-    .then(data => {
-        let template = Handlebars.compile(data)(allCards);
-
-        forTemplate.innerHTML = template;
-    });
-
-   }
+   
 
 
-   getData();
-   renderCard();
+   
 
 
 });
