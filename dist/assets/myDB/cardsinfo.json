@@ -6,5 +6,11 @@
         "addLinkTitle": "freecodecamp",
         "text": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum excepturi dolorum dignissimos distinctio officiis! Molestias, est eius! Nisi eveniet voluptatem dolorum cum atque, corporis maxime magni maiores, laudantium totam a!",
         "projectLink": "../../../My-freecodecamp-projects"
+    },
+    {
+        "image": "/dist/assets/img/my-little-projects-with-js.jpg",
+        "header": "My little projects with JS",
+        "text": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum excepturi dolorum dignissimos distinctio officiis! Molestias, est eius! Nisi eveniet voluptatem dolorum cum atque, corporis maxime magni maiores, laudantium totam a!",
+        "projectLink": "../../../my-little-projects-with-js"
     }
 ]

@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	font-family: 'Raleway', sans-serif;
+}
+
+.block-for-header {
+	display: flex;
+    align-items: center;
+	justify-content: center;
+	background-color: #17171F;
+    color: #fefefe;
+}
+
+.block-for-header__header {
+	font-weight: 500;
+	text-transform: uppercase;
+	font-size: 1.8em;
+	letter-spacing: 1px;
+	margin: 30px 0;
+}
+
+.main-content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #414858;
+}
+
+.main-content__projects {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	padding: 50px 40px;
+	flex-wrap: wrap;
+}
+
+.main-content__project-card {
+	width: calc(100% / 12 * 6 - 80px);
+	margin: 20px;
+	background-color: #242830;
+	padding: 5px 10px;
+	border-radius: 3px;
+}
+
+.main-content__img {
+	background-size: cover;
+	width: 100%;
+}
+
+.main-content__buttons {
+	display: flex;
+    align-items: center;
+	justify-content: space-between;
+	padding: 5px 0;
+	font-size: 1em;
+}
+
+.main-content__card-header {
+	color: #fefefe;
+}
+
+.main-content__button {
+	text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    border-radius: 3px;
+	padding: 5px 8px;
+	transition: 0.5s all ease;
+}
+
+.main-content__button:hover {
+	color: #242830;
+    background-color: white;
+}
+
+.my-contacts {
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+	background-color: rgb(23, 23, 31);
+	position: absolute;
+    right: 0;
+    left: 0;
+	padding: 75px 0;
+}
+
+.my-contacts__header {
+	text-align: center;
+	font-size: 1em;
+	font-weight: 600;
+	letter-spacing: 1.5px;
+    text-transform: uppercase;
+	color: white;
+}
+
+.my-contacts__for-list {
+	display: flex;
+	justify-content: center;
+}
+
+.my-contacts__list {
+	list-style: none;
+	width: fit-content;
+	font-size: 0.9em;
+	color: rgba(255, 255, 255, 0.58);
+	margin-bottom: 0;
+}
+
+.my-contacts__list-item {
+	font-family: 'Roboto', sans-serif;
+}
+
+.my-contacts__list li:nth-child(2),
+.my-contacts__list li:nth-child(3) {
+	margin-top: 10px;
+}
+
+.my-contacts__for-icon {
+	margin-right: 15px;
+    font-size: 20px;
+    position: relative;
+    top: 3px;
+}
+
+.my-contacts__validate {
+	position: absolute;
+	bottom: 15px;
+}
+
+@media screen and (max-width: 1500px) {
+	.main-content__project-card {
+		width: calc(100% / 12 * 6 - 80px);
+		margin: 20px;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	.block-for-header__header {
+		font-size: 1.5em;
+		margin: 20px 0;
+	}
+
+	.main-content__button {
+		padding: 3px 5px;
+	}
+}
+
+@media screen and (max-width: 900px) {
+
+	.main-content__projects {
+		padding: 20px 70px;
+	}
+
+	.main-content__project-card {
+		width: calc(100% / 12 * 12);
+		margin: 0;
+	}
+
+	.main-content__project-card-2, .main-content__project-card-3 {
+		margin-top: 20px;
+	}
+
+	.main-content__buttons {
+		padding: 0;
+	}
+
+	.my-contacts {
+		padding: 50px 0;
+	}
+
+	.my-contacts__list {
+		padding: 0;
+	}
+}
+
+@media screen and (max-width: 700px) {
+
+	.main-content__projects {
+		padding: 20px 50px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.block-for-header__header {
+		font-size: 1.1em;
+	}
+
+	.main-content__projects {
+		padding: 20px 10px;
+	}
+
+	.main-content__project-card-2 {
+		margin-top: 10px;
+	}
+}
+
