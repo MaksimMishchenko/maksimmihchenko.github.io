@@ -34,7 +34,7 @@ function deleteTaskFromLS(e) {
 
     setTimeout(() => {
         popUp.classList.add('hide-pop-up');
-    }, 4000);
+    }, 5000);
 
     localStorage.removeItem(key);
 }

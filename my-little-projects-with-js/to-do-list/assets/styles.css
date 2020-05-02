@@ -41,10 +41,11 @@ body {
     width: 100%;
     background-color: #3ed699;
     border-radius: 5px;
+    display: flex;
 }
 
 .to-do__input {
-    width: 60%;
+    width: 50%;
     outline: none;
     padding: 10px 20px;
     border: 1.5px solid #3ed699;
@@ -59,13 +60,11 @@ body {
     padding: 10px;
     border-radius: 5px;
     color: white;
-    margin-left: 5px;
     cursor: pointer;
 }
 
 .to-do__output {
     width: 100%;
-    margin: 20px 0 0 0;
 }
 
 .to-do__output-item {
@@ -127,4 +126,69 @@ body {
     transform: translate(0, 100vh);
     opacity: 0;
     transition: all 2s ease;
+}
+
+
+
+@media screen and (min-width: 340px) {
+    .to-do__input {
+        flex: 3;
+    }       
+}
+
+@media screen and (min-width: 450px) {
+    
+    .side-padding {
+        padding: 20px 40px;
+    }
+}
+
+@media screen and (min-width: 550px) {
+
+    .page-header-wrapper {
+        text-align: center;
+    }       
+
+    .to-do__wrapper {
+        width: 90%;
+        margin: auto;
+        min-height: calc(100vh - 140px);
+        border-radius: 20px;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .to-do__wrapper {
+        width: 80%;
+    }
+
+    .side-padding {
+        padding: 20px 60px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .to-do__wrapper {
+        width: 70%;
+    }
+
+    .side-padding {
+        padding: 20px 120px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .to-do__wrapper {
+        width: 50%;
+    }
+
+    .side-padding {
+        padding: 20px 200px;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .to-do__wrapper {
+        width: 800px;
+    }
 }
