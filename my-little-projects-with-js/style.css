@@ -28,6 +28,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	background-color: #414858;
+	min-height: 50vh;
 }
 
 .main-content__projects {
