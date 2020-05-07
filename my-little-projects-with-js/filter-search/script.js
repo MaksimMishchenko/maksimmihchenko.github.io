@@ -1,6 +1,5 @@
 let searchField = document.querySelector(".filter-search__input");
 
-
 function searchElements(e) {
 
     let value = e.target.value.toLowerCase().trim();

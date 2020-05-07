@@ -33,6 +33,7 @@ body {
 
 .filter-search {
     width: 100%;
+    position: relative;
 }
 
 .filter-search__input {
@@ -55,6 +56,18 @@ body {
     color: #52514e;
     font-size: 2vh;
     font-weight: 600;
+    position: absolute;
+}
+
+.filter-search__hidden-list {
+    visibility: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.filter-search__hidden-list-element {
+    padding: 5px 0;
+    border-bottom: 1px solid white;
 }
 
 .filter-search__list-element {
