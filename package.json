@@ -6,7 +6,7 @@
   "main": "render-template.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack",
+    "build": "webpack --mode production",
     "dev": "cross-env NODE_ENV=development webpack --mode development",
     "prod": "cross-env NODE_ENV=production webpack --mode production",
     "start": "cross-env NODE_ENV=development webpack-dev-server --mode development --open",
