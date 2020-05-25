@@ -1,6 +1,5 @@
-You can open this page, if you want to do this, copy MaksimMishchenko.github.io and paste into the search bar.
-
-# MaksimMishchenko.github.io/dist
-
-[My Portfolio](https://maksimmishchenko.github.io/dist/)
+## Overview
  
+ This is my portfolio. It's contains all my projects. You can open this page on GitHub Pages.
+
+[Go To Portgolio](https://maksimmishchenko.github.io/dist/)
