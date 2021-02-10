@@ -1,5 +1,5 @@
 ## Overview
  
- This is my portfolio. It's contains all my projects. You can open this page on GitHub Pages.
+This is my portfolio. It contains all my projects. You can open it on GitHub Pages.
 
-[Go To Portgolio](https://maksimmishchenko.github.io/dist/)
+[Go To Portfolio](https://maksimmishchenko.github.io/dist/)
